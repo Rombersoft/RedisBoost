@@ -138,14 +138,14 @@ namespace RedisBoost
 			return IntegerCommand(request);
 		}
 
-		public Task<string> SetExAsync<T>(string key, int seconds, T value)
+        public Task<string> SetExAsync<T>(string key, TimeSpan timeAlive, T value)
 		{
-			return SetExAsync(key, seconds, Serialize(value));
+            return SetExAsync(key, timeAlive, Serialize(value));
 		}
 
-		public Task<string> SetExAsync(string key, int seconds, byte[] value)
+        public Task<string> SetExAsync(string key, TimeSpan timeAlive, byte[] value)
 		{
-			return StatusCommand(RedisConstants.SetEx, key.ToBytes(), seconds.ToBytes(), value);
+            return StatusCommand(RedisConstants.SetEx, key.ToBytes(), timeAlive.TotalSeconds.ToBytes(), value);
 		}
 
 		public Task<string> PSetExAsync<T>(string key, int milliseconds, T value)

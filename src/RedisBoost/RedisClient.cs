@@ -359,6 +359,5 @@ namespace RedisBoost
 			return (T)Serializer.Deserialize(typeof(T), value);
 		}
 		#endregion
-
 	}
 }

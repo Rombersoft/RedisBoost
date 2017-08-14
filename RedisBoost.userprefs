@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="tests/RedisBoost.ConsoleBenchmark/RedisBoost.ConsoleBenchmark.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/RedisBoost/Core/Sender/RedisSender.cs">
+    <Files>
+      <File FileName="src/RedisBoost/RedisClient.cs" Line="185" Column="3" />
+      <File FileName="src/RedisBoost/IRedisClient.cs" Line="1141" Column="56" />
+      <File FileName="src/RedisBoost/Core/Pool/PooledRedisClient.cs" Line="23" Column="50" />
+      <File FileName="src/RedisBoost/Core/IPrepareSupportRedisClient.cs" Line="23" Column="2" />
+      <File FileName="src/RedisBoost/RedisClient.Strings.cs" Line="158" Column="20" />
+      <File FileName="src/RedisBoost/Core/Channel/RedisChannel.cs" Line="75" Column="33" />
+      <File FileName="src/RedisBoost/RedisResponse.cs" Line="103" Column="3" />
+      <File FileName="src/RedisBoost/Core/Pipeline/IRedisPipeline.cs" Line="24" Column="25" />
+      <File FileName="src/RedisBoost/Core/Pipeline/RedisPipeline.cs" Line="105" Column="26" />
+      <File FileName="src/RedisBoost/Core/Sender/IRedisSender.cs" Line="24" Column="3" />
+      <File FileName="src/RedisBoost/Core/Sender/RedisSender.cs" Line="92" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

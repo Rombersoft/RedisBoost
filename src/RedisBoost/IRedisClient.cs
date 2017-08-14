@@ -1135,19 +1135,19 @@ namespace RedisBoost
 		/// </summary>
 		/// <typeparam name="T"></typeparam>
 		/// <param name="key"></param>
-		/// <param name="seconds"></param>
+        /// <param name="timeAlive"></param>
 		/// <param name="value"></param>
 		/// <returns></returns>
-		Task<string> SetExAsync<T>(string key, int seconds, T value);
+        Task<string> SetExAsync<T>(string key, TimeSpan timeAlive, T value);
 		/// <summary>
 		/// Set the value and expiration of a key.
 		/// <br/> Complexity: O(1)
 		/// </summary>
 		/// <param name="key"></param>
-		/// <param name="seconds"></param>
+        /// <param name="timeAlive"></param>
 		/// <param name="value"></param>
 		/// <returns></returns>
-		Task<string> SetExAsync(string key, int seconds, byte[] value);
+        Task<string> SetExAsync(string key, TimeSpan timeAlive, byte[] value);
 		/// <summary>
 		/// Set the value and expiration in milliseconds of a key.
 		/// <br/> Complexity: O(1)

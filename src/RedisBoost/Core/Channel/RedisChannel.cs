@@ -44,8 +44,7 @@ namespace RedisBoost.Core.Channel
 
 		public Task<string> StatusCommand(byte[][] args)
 		{
-			return ExecuteRedisCommand(args).ContinueWithIfNoError(
-					t => t.Result.ResponseType != ResponseType.Status ? string.Empty : t.Result.AsStatus());
+			return ExecuteRedisCommand(args).ContinueWithIfNoError( t => t.Result.ResponseType != ResponseType.Status ? string.Empty : t.Result.AsStatus());
 		}
 
 		public Task<long> IntegerCommand(byte[][] args)

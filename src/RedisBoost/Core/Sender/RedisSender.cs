@@ -87,10 +87,8 @@ namespace RedisBoost.Core.Sender
 		private bool SendDataTask(bool async, SenderAsyncEventArgs args)
 		{
 			var context = (SenderContext)args.UserToken;
-
-		TryAgain:
-
-			if (context.EventArgs.HasError)
+          TryAgain:
+            if (context.EventArgs.HasError)
 				return CallOnSendCompleted(async, context);
 
 			if (context.SendState == 0)

@@ -283,7 +283,7 @@ namespace RedisBoost.Tests
 		{
 			using (var cli = CreateClient())
 			{
-				cli.SetExAsync("Key", 2, "Value").Wait();
+                cli.SetExAsync("Key", TimeSpan.FromSeconds(2), "Value").Wait();
 				Thread.Sleep(4000);
 				var exists = cli.ExistsAsync("Key").Result;
 				Assert.AreEqual(0, exists);
